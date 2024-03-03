@@ -43,17 +43,17 @@
                 <td>{{ $perProduct->product->magazijn->aantal_aanwezig }}</td>
                 <td>{{ $perProduct->product->magazijn->verpakkings_eenheid }} kg</td>
                 <td>{{ $perProduct->datum_levering }}</td>
-                <td><a href="{{ route('levering.create', $perProduct->id) }}"><span style="color: blue;" class="material-symbols-outlined">add</span></a></td>
+                <td><a href="{{ route('levering.create', $perProduct->id) }}"><span style="color: teal;" class="material-symbols-outlined">add</span></a></td>
             </tr>
             @endforeach
         </tbody>
         @endif
     </table>
     <div class="center">
-        <x-primary-button style="margin-top: 1rem;" class="center">
+    <x-primary-button style="background-color: black; color: white; padding: 1rem 2.45rem; border-radius: 25px; margin-top: 1rem; border: solid 2px white; cursor: pointer;" class="center">
             <a href="{{ route('leverancier') }}">Terug</a>
         </x-primary-button>
-        <x-primary-button style="margin-top: 1rem; margin-left: 1rem;" class="center">
+        <x-primary-button style="background-color: black; color: white; padding: 1rem 2.45rem; border-radius: 25px; margin-top: 1rem; border: solid 2px white; cursor: pointer;" class="center">
             <a href="{{ route('dashboard') }}">Home</a>
         </x-primary-button>
     </div>

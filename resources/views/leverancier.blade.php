@@ -31,7 +31,7 @@
             <td>{{ $leverancier->leverancier_nummer }}</td>
             <td>{{ $leverancier->mobiel }}</td>
             <td>{{ $leverancier->uniqueProductCount = $leverancier->productPerLeveranciers->unique('product_id')->count(); }}</td>
-            <td><a href="{{ route('leverancier.producten', $leverancier->id) }}"><span style="color: blue;" class="material-symbols-outlined">info</span></a></td>
+            <td><a href="{{ route('leverancier.producten', $leverancier->id) }}"><span style="color: teal;" class="material-symbols-outlined">info</span></a></td>
         </tr>
         @endforeach
     </table>

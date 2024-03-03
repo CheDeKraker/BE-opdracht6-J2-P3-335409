@@ -10,3 +10,8 @@ main{
 tr,th,td{
     background-color: black;
 }
+
+td,th,td
+{
+    border: solid 3px white;
+}

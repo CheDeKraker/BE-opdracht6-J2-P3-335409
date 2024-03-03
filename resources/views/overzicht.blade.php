@@ -39,7 +39,7 @@
                 @endif
             </td>
             <td>
-                <a href="{{ route('leverantie.show', $product->id) }}"><span style="color: blue;" class="material-symbols-outlined">info</span></a>
+                <a href="{{ route('leverantie.show', $product->id) }}"><span style="color: teal;" class="material-symbols-outlined">info</span></a>
             </td>
         </tr>
         @endforeach
